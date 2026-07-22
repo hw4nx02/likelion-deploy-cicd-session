@@ -1,6 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
@@ -9,7 +8,7 @@ from .serializers import MovieSerializer, CommentSerializer
 
 from django.shortcuts import get_object_or_404
 
-
+# 배포 자동화를 테스트 해보기 위함
 @api_view(['GET', 'POST'])
 def movie_list_create(request):
     if request.method == 'GET':
